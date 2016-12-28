@@ -1,0 +1,130 @@
+body {
+    background-color: #222;
+}
+
+/* Social Links */
+a {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+.fbook:hover,
+.fbook:focus,
+.fbook:active {
+    color: #3B5998;
+}
+.twitter:hover,
+.twitter:focus,
+.twitter:active {
+    color: #1DA1F2;
+}
+.instagram:hover,
+.instagram:focus,
+.instagram:active {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    border-radius: .19em;
+}
+.spotify:hover,
+.spotify:focus,
+.spotify:active {
+    color: #1ED760;
+}
+.youtube:hover,
+.youtube:focus,
+.youtube:active {
+    color: #EE1C1B;
+}
+.apple:hover,
+.apple:focus,
+.apple:active {
+    color: #939393;
+}
+
+/* Standard Classes */
+.p100 {
+    width: 100%;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.floatl {
+    float: left;
+}
+
+.floatr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.mright1em {
+    margin-right: 1em;
+}
+
+.center {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Logo */
+.logo {
+    margin-top: 2em;
+    width: 560px;
+    height: 430px;
+    background: url('../images/Logo_black_notxt_600.png') no-repeat center center scroll;
+}
+
+.logoContainer {
+    width: 13.35em;
+}
+
+/* Bandcamp */
+.bandcamp {
+    width: 600px;
+    margin-top: 2em;
+}
+
+/* Social Links Container */
+.social {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #fff;
+}
+
+@media (max-width: 750px) {
+    .logo {
+        margin-top: 2em;
+        width: 300px;
+        height: 218px;
+        background: url('../images//Logo_black_300.png') no-repeat center center scroll;
+    }
+
+    .bandcamp {
+        width: 300px;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 330px) {
+    .logo {
+        margin-top: 2em;
+        width: 300px;
+        height: 218px;
+        background: url('../images/Logo_black_300.png') no-repeat center center scroll;
+    }
+
+    .bandcamp {
+        width: 300px;
+        margin-top: 2em;
+    }
+}
