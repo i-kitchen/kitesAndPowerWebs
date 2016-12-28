@@ -1,0 +1,37 @@
+body {
+    background-color: #222;
+}
+
+.image-bg-fluid-height {
+	/*background: url('../../content/ArtWorkForBooklet/KitesPowerlines/homeTreeSummer.jpg') no-repeat center center scroll;*/
+}
+
+.navBar {
+    height: 50px;
+}
+
+.p100 {
+    width: 100%;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.center {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.bandcamp {
+    width: 700px;
+}
+
+.social {
+    margin-top: 2em;
+}
+
+@media(max-width:768px) {
+    
+}
