@@ -13,12 +13,12 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <!-- Custom CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-    <div class="p100">
+    <div id="mainLogo" class="p100" style="display:none">
         <div class="logo center"></div>
     </div>
 
@@ -26,24 +26,41 @@
 
 
     <div class="p100">
-        <div class="bandcamp center">
+        <div id="bandContainer" class="bandcamp center" style="display:none">
             <iframe style="border: 0; width: 100%; height: 120px; align: middle;" src="https://bandcamp.com/EmbeddedPlayer/album=3978190217/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/track=824650569/transparent=true/" seamless><a href="http://kitesandpowerlines.bandcamp.com/album/zan-x-new-life">ZAN-X/New Life by Kites And Powerlines</a></iframe>
         </div>
     </div>
 
     <div class="p100 social">
-        <div class="logoContainer center">
-            <a href="https://www.facebook.com/kitesandpowerlines" target="_blank"><i class="fa fa-facebook fa-lg mright1em floatl fbook" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/k_andpowerlines" target="_blank"><i class="fa fa-twitter fa-lg mright1em floatl twitter" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/kitesandpowerlines/" target="_blank"><i class="fa fa-instagram fa-lg mright1em floatl instagram" aria-hidden="true"></i></a>
-            <a href="https://open.spotify.com/artist/7tBBJAO0TJozdp06CeSspU" target="_blank"><i class="fa fa-spotify fa-lg mright1em floatl spotify" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com/kitesandpowerlines" target="_blank"><i class="fa fa-youtube-play fa-lg mright1em floatl youtube" aria-hidden="true"></i></a>
-            <a href="https://itunes.apple.com/us/artist/kites-and-powerlines/id1160476836" target="_blank"><i class="fa fa-apple fa-lg floatl apple" aria-hidden="true"></i></a>
+        <div id="outerLogo" class="logoContainer center linkSize" style="display:none">
+            <a href="https://www.facebook.com/kitesandpowerlines" target="_blank"><i class="fa fa-facebook mright1em floatl fbook linkPadding" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/k_andpowerlines" target="_blank"><i class="fa fa-twitter mright1em floatl twitter linkPadding" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/kitesandpowerlines/" target="_blank"><i class="fa fa-instagram mright1em floatl instagram linkPadding" aria-hidden="true"></i></a>
+            <a href="https://open.spotify.com/artist/7tBBJAO0TJozdp06CeSspU" target="_blank"><i class="fa fa-spotify mright1em floatl spotify linkPadding" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/kitesandpowerlines" target="_blank"><i class="fa fa-youtube-play mright1em floatl youtube linkPadding" aria-hidden="true"></i></a>
+            <a href="https://itunes.apple.com/us/artist/kites-and-powerlines/id1160476836" target="_blank"><i class="fa fa-apple floatl apple linkPadding" aria-hidden="true"></i></a>
         </div>
     </div>
+    <div></div>
 
-    <!-- jQuery -->
+    <!-- Scripts -->
     <script src="js/jquery.js"></script>
+    <script src="js/fadeIn.js"></script>
+
+    <!-- Fade In -->
+    <script>
+        $(function() {
+            setTimeout(function(){
+                $('#mainLogo').fadeIn(5000);
+            }, 500);
+
+            setTimeout(function(){
+                $("#outerLogo").fadeIn(2000).css("display", "block");
+                $("#bandContainer").fadeIn(2000).css("display", "block");
+                $("#hamburger").fadeIn(2000).css("display", "block");
+            }, 3000);
+        });
+    </script>
 
 </body>
 </html>

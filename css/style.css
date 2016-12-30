@@ -2,7 +2,7 @@ body {
     background-color: #222;
 }
 
-/* Social Links */
+/***** Social Links *****/
 a {
     color: white;
 }
@@ -27,7 +27,7 @@ a:visited {
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    border-radius: .19em;
+    border-radius: .2em;
 }
 .spotify:hover,
 .spotify:focus,
@@ -44,8 +44,14 @@ a:visited {
 .apple:active {
     color: #939393;
 }
+.linkSize {
+    font-size: 30px;
+}
+.linkPadding {
+    padding: 1px 3px 1px 3px;
+}
 
-/* Standard Classes */
+/***** Standard Classes *****/
 .p100 {
     width: 100%;
 }
@@ -73,10 +79,9 @@ a:visited {
 .center {
 	margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 
-/* Logo */
+/***** Logo *****/
 .logo {
     margin-top: 2em;
     width: 560px;
@@ -85,20 +90,30 @@ a:visited {
 }
 
 .logoContainer {
-    width: 13.35em;
+    width: 11.2em;
 }
 
-/* Bandcamp */
+/***** Bandcamp *****/
 .bandcamp {
     width: 600px;
     margin-top: 2em;
 }
 
-/* Social Links Container */
+/***** Social Links Container *****/
 .social {
     margin-top: 2em;
     margin-bottom: 2em;
     color: #fff;
+}
+
+/***** Responsive Design *****/
+@media (max-height: 700px) {
+    .logo {
+        margin-top: 2em;
+        width: 400px;
+        height: 291px;
+        background: url('../images//Logo_black_400.png') no-repeat center center scroll;
+    }
 }
 
 @media (max-width: 750px) {
@@ -113,18 +128,21 @@ a:visited {
         width: 300px;
         margin-top: 2em;
     }
+
+    #hamburgerContainer {
+        height: 2em;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
-@media (max-width: 330px) {
-    .logo {
-        margin-top: 2em;
-        width: 300px;
-        height: 218px;
-        background: url('../images/Logo_black_300.png') no-repeat center center scroll;
+@media (max-width: 400px) {
+    .mright1em {
+        margin-right: .5em;
     }
 
-    .bandcamp {
-        width: 300px;
-        margin-top: 2em;
+    .logoContainer {
+        width: 8.7em;
     }
 }
