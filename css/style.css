@@ -112,7 +112,7 @@ a:visited {
         margin-top: 2em;
         width: 400px;
         height: 291px;
-        background: url('../images//Logo_black_400.png') no-repeat center center scroll;
+        background: url('../images/Logo_black_400.png') no-repeat center center scroll;
     }
 }
 
@@ -121,7 +121,7 @@ a:visited {
         margin-top: 2em;
         width: 300px;
         height: 218px;
-        background: url('../images//Logo_black_300.png') no-repeat center center scroll;
+        background: url('../images/Logo_black_300.png') no-repeat center center scroll;
     }
 
     .bandcamp {
@@ -144,5 +144,22 @@ a:visited {
 
     .logoContainer {
         width: 8.7em;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .logo {
+        margin-top: 2em;
+        width: 300px;
+        height: 218px;
+        background: url('../images/Logo_black_300.png') no-repeat center center scroll;
+    }
+
+    .bandcamp {
+        width: 300px;
+        margin-top: 2em;
     }
 }
