@@ -22,10 +22,10 @@ a:visited {
 .instagram:hover,
 .instagram:focus,
 .instagram:active {
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     border-radius: .2em;
 }
@@ -77,7 +77,7 @@ a:visited {
 }
 
 .center {
-	margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -143,23 +143,16 @@ a:visited {
     }
 
     .logoContainer {
-        width: 8.7em;
+        width: 8.8em;
     }
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    .logo {
-        margin-top: 2em;
-        width: 300px;
-        height: 218px;
-        background: url('../images/Logo_black_300.png') no-repeat center center scroll;
-    }
-
-    .bandcamp {
-        width: 300px;
-        margin-top: 2em;
+@media only screen
+  and (min-width: 375px)
+  and (max-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .logoContainer {
+        width: 11.3em;
     }
 }
