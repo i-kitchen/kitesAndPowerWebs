@@ -107,7 +107,8 @@ a:visited {
 }
 
 /***** Responsive Design *****/
-@media (max-height: 700px) {
+@media (max-height: 700px)
+   and (min-width: 750px){
     .logo {
         margin-top: 2em;
         width: 400px;
